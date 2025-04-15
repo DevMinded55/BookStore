@@ -65,15 +65,15 @@ nav {
         margin-bottom: 2rem;
     }
 
-    #favIcon {
+    .favIcon {
         height: 3.5rem;
         width: auto;
         margin-bottom: 1rem;
     }
-    #favedIcon {
-        height: 3.5rem;
-        width: auto;
-        margin-bottom: 1rem;
+
+    .favIcon:hover {
+        cursor: pointer;
+        transform: scale(1.1);
     }
 }
 
@@ -105,13 +105,13 @@ nav {
     height: 20rem;
     width: 95%;
     overflow-y: scroll;
-    font-size: 1.2rem;
     display: flex;
     flex-direction: column;
     text-align: start;
     margin-bottom: 1rem;
     p{
         font-weight: normal;
+        font-size: 1.4rem;
     }
 }
 
@@ -121,7 +121,7 @@ nav {
     margin-top: 0.8rem;
 }
 
-#comment-input{
+.comment-input{
     width: 80%;
     font-size: 1.4rem;
 }

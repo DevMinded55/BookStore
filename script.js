@@ -40,6 +40,7 @@ function priceToFloat(i) {
 function renderBookComments(i) {
     let commentsRef = document.getElementById(`bookComments${i}`);
     let comments = books[i].comments;
+    commentsRef.innerHTML = "";
 
     for (let k = 0; k < comments.length; k++) {
         commentsRef.innerHTML += `
@@ -47,5 +48,19 @@ function renderBookComments(i) {
             <p>${comments[k].comment}</p>
             <br>
         `;
+    }
+}
+
+function pushComment(i) {
+    let commentRef = document.getElementById(`comment-input${i}`);
+    let comment = commentRef.value;
+
+    if (comment !== "") {
+        books[i].comments.push({
+            name: "Burak",
+            comment: comment
+        });
+        renderBookComments(i);
+        commentRef.value = "";
     }
 }

@@ -11,14 +11,14 @@ function getBooks(i) {
     }</p>
                         <div>
                         <p id="book-likes${[i]}"> ${books[i].likes}</p>
-                        <img onclick="toggleLikedBooks(${[i]})" id="favIcon${[
+                        <img onclick="toggleLikedBooks(${[i]})" class="favIcon" id="favIcon${[
         i,
     ]}" src="./assets/icons/Fav.png" alt="">
                         <img onclick="toggleUnlikedBooks(${[
                             i,
                         ]})" id="favedIcon${[
         i,
-    ]}" class="d-none" src="./assets/icons/liked.png" alt="">
+    ]}" class="favIcon d-none" src="./assets/icons/liked.png" alt="">
                         </div>
                         </div>
                         <div class="book-info">
@@ -31,8 +31,8 @@ function getBooks(i) {
                         <div class="textbox" id="bookComments${[i]}">
                         </div>
                         <div class="write-comment">
-                        <input id="comment-input" type="text">
-                        <button>Senden</button>
+                        <input class="comment-input" id="comment-input${[i]}" type="text">
+                        <button onclick ="pushComment(${[i]})">Senden</button>
                         </div>
                         </div>
                     </div>`;
