@@ -11,7 +11,9 @@ function getBooks(i) {
     }</p>
                         <div>
                         <p id="book-likes${[i]}"> ${books[i].likes}</p>
-                        <img onclick="toggleLikedBooks(${[i]})" class="favIcon" id="favIcon${[
+                        <img onclick="toggleLikedBooks(${[
+                            i,
+                        ]})" class="favIcon" id="favIcon${[
         i,
     ]}" src="./assets/icons/Fav.png" alt="">
                         <img onclick="toggleUnlikedBooks(${[
@@ -31,7 +33,9 @@ function getBooks(i) {
                         <div class="textbox" id="bookComments${[i]}">
                         </div>
                         <div class="write-comment">
-                        <input class="comment-input" id="comment-input${[i]}" type="text">
+                        <input class="comment-input" id="comment-input${[
+                            i,
+                        ]}" type="text">
                         <button onclick ="pushComment(${[i]})">Senden</button>
                         </div>
                         </div>

@@ -7,28 +7,28 @@
     font-size: 10px;
 }
 
-a{
+a {
     color: white;
 }
 
-h1{
+h1 {
     font-size: 2.8rem;
 }
 
-h2{
-    font-size: 2.4rem;
+h2 {
+    font-size: 2.2rem;
 }
 
-h3{
+h3 {
     font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
-p{
+p {
     font-size: 1.6rem;
     margin-bottom: 0.5rem;
 }
 
-.d-none{
+.d-none {
     display: none;
 }

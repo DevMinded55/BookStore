@@ -58,7 +58,7 @@ function pushComment(i) {
     if (comment !== "") {
         books[i].comments.push({
             name: "Burak",
-            comment: comment
+            comment: comment,
         });
         renderBookComments(i);
         commentRef.value = "";
