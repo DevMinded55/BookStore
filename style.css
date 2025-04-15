@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    min-height: 100dvh;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    padding: 1.6rem 8rem 1.6rem 8rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 8rem;
+}
+
+nav {
+    a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+        margin-right: 2.4rem;
+        font-size: 1.6rem;
+    }
+    div {
+        list-style: none;
+        display: flex;
+        margin-top: 0.8rem;
+    }
+}
+
+.hero {
+    background-color: #e0e0e0;
+    padding: 3.2rem;
+    text-align: center;
+}
+
+.book-list {
+    padding: 3.2rem;
+    display: flex;
+    flex: 1;
+}
+
+#books {
+    display: flex;
+    gap: 2.4rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.book-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    padding: 1.6rem;
+    text-align: center;
+    width: 30rem;
+    transition: transform 0.2s;
+
+    img {
+        width: 100%;
+        height: auto;
+        border-radius: 4px;
+        margin-bottom: 2rem;
+    }
+
+    #favIcon {
+        height: 3.5rem;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+    #favedIcon {
+        height: 3.5rem;
+        width: auto;
+        margin-bottom: 1rem;
+    }
+}
+
+.book-info {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    margin-bottom: 1rem;
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.like-price {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 6rem;
+    div {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.textbox {
+    height: 20rem;
+    width: 95%;
+    overflow-y: scroll;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    text-align: start;
+    margin-bottom: 1rem;
+    p{
+        font-weight: normal;
+    }
+}
+
+.price {
+    color: #27ae60;
+    font-weight: bold;
+    margin-top: 0.8rem;
+}
+
+#comment-input{
+    width: 80%;
+    font-size: 1.4rem;
+}
+
+.write-comment{
+    height: 3rem;
+    display: flex;
+    justify-content: start;
+    button{
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 1.6rem;
+    margin-top: 3.2rem;
+    height: 12rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

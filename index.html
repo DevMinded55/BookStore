@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bücherparadies</title>
+        <link rel="icon" type="image/png" href="./assets/icons/open-book.png"/>
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="styles/standard.css">
+        <script src="scripts/templates.js"></script>
+        <script src="./scripts/objects.js"></script>
+    </head>
+    <body onload="renderBooks()">
+        <header>
+            <a href="index.html">
+            <h1>Bücherparadies</h1>
+            </a>
+            <nav>
+                <div>
+                    <a href="index.html">Start</a>
+                    <a href="#">Über uns</a>
+                    <a href="#">Kontakt</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero">
+                <h2>Willkommen im Bücherparadies!</h2>
+                <p>Finde dein nächstes Lieblingsbuch bei uns!</p>
+            </section>
+
+            <section class="book-list">
+                <div id="books">
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2025 Bücherparadies | Alle Rechte vorbehalten</p>
+        </footer>
+    </body>
+    <script src="script.js"></script>
+</html>
+
